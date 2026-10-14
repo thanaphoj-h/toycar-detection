@@ -1,11 +1,16 @@
 # Python Virtual Environment
 .venv/
+__pycache__/
+*.py[cod]
 
 # IDE Config
+.vscode/
 .idea/
 
-# Python Cache
-__pycache__/
+# Environment
+.env
+.env.*
+!.env.example
 
 # MacOS System File
 .DS_Store
