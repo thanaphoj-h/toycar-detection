@@ -14,3 +14,11 @@ __pycache__/
 
 # MacOS System File
 .DS_Store
+
+# Ignore image and video files
+/assets/images/*
+/assets/videos/*
+
+# Keep directory structure
+!/assets/images/.gitkeep
+!/assets/videos/.gitkeep

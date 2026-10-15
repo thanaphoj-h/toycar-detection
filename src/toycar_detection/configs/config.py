@@ -1,4 +1,4 @@
-# src/toycar_detection/config.py
+# src/toycar_detection/configs.py
 
 """
 Configuration module for Toy Car Detection

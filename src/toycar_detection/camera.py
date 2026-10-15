@@ -1,19 +1,11 @@
 # src/toycar_detection/camera.py
-"""
-Camera capture module for OpenCV.
-
-Provides a Camera class for initializing, configuring,
-reading, and releasing a camera device.
-
-Camera settings are loaded from the project configuration.
-"""
 
 import cv2
 import numpy as np
 
 from numpy.typing import NDArray
 
-from toycar_detection.config import (
+from toycar_detection.configs.config import (
     CAMERA_INDEX,
     FRAME_WIDTH,
     FRAME_HEIGHT,
@@ -22,15 +14,12 @@ from toycar_detection.config import (
 
 
 class Camera:
-    """Manage camera initialization, frame capture, and release."""
 
-    def __init__(
-        self,
-        camera_index: int = CAMERA_INDEX,
-        width: int = FRAME_WIDTH,
-        height: int = FRAME_HEIGHT,
-        fps: int = FPS,
-    ) -> None:
+    def __init__(self,
+                 camera_index: int = CAMERA_INDEX,
+                 width: int = FRAME_WIDTH,
+                 height: int = FRAME_HEIGHT,
+                 fps: int = FPS, ) -> None:
         self.camera_index = camera_index
         self.width = width
         self.height = height
@@ -68,6 +57,10 @@ class Camera:
         return frame
 
     def is_opened(self) -> bool:
+
+        b
+        if self.cap is not None and
+
 
         return self.cap is not None and self.cap.isOpened()
 
